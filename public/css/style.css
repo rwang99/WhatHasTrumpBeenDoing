@@ -1,19 +1,36 @@
+/* color palette: https://coolors.co/2b2d42-fb3640-e4fde1-2978a0-2d0605 */
+
 body {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     background-size: 100% auto;
-    background-color: rgb(0, 0, 0);
+    background-color: #2D0605;
     margin: 0;
     padding: 0;
 }
 
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 23px;
     letter-spacing: 0.2px;
 }
 
+.article {
+    width: 100%;
+    padding: 4% 10%;
+    background-color: #E4FDE1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #2B2D42;
+    position: relative;
+    margin: 30px auto;
+}
 
 .center {
     text-align: center;
@@ -25,28 +42,29 @@ p {
  }
 
 .panel{
-    padding: 5% 20%;
-    color: white;
-    background-color: darkslategrey;
+    padding: 1% 20%;
+    color: #E4FDE1;
+    /* background-color: #2D0605; */
+    background-color: #2978A0;
 }
 
 .title {
-    font-size: 80px;
-    color: rgb(50, 255, 50);
-    line-height: 100px;
+    font-size: 60px;
+    color: #E4FDE1;
+    line-height: 120px;
     font-weight: bolder;
 }
 
 #home {
     /* background-color: rgba(0,0,0,.4); */
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7); /* adds opacity filter */
+    box-shadow: inset 0 0 0 1000px rgba(45,6,5,.7); /* adds opacity filter */
     background: url("bg.jpg") no-repeat;
-    height: 95vh;
+    height: 80vh;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 40px 0px;
+    margin: -1px;
 }
 
-#news {
 
-}
+
