@@ -1,0 +1,22 @@
+{
+  "name": "whathastrumpbeendoing",
+  "version": "1.0.0",
+  "description": "Trump News Aggregate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwang99/WhatHasTrumpBeenDoing.git"
+  },
+  "author": "Richard Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwang99/WhatHasTrumpBeenDoing/issues"
+  },
+  "homepage": "https://github.com/rwang99/WhatHasTrumpBeenDoing#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
