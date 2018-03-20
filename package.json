@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rwang99/WhatHasTrumpBeenDoing#readme",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "newsapi": "^2.2.0"

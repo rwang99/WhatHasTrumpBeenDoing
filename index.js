@@ -2,6 +2,7 @@ const express = require('express');
 const router = express();
 const bodyParser = require('body-parser');
 router.set('view engine', 'ejs');
+require('dotenv').load();
 
 router.use(express.static(__dirname)); // exposes the css
 var path = require('path');
@@ -24,7 +25,7 @@ router.listen(3000, function () {
 });
 
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('fac8aae543cd4923b1b6b38ea7fbf077');
+const newsapi = new NewsAPI(process.env.API_KEY);
 
 // router.post('/', function(req, res){
 //   newsapi.v2.topHeadlines({
