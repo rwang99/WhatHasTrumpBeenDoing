@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>What has Trump been up to today?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>  <!-- google fonts -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>		<!-- jquery -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/> <!-- font awesome icons -->
+    
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"> <!-- external style sheet -->
+    
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- bootstrap js -->
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div id = "home" class = "center panel">
+            <div class = "title"><br><br>What has <span style="color: #FB3640; font-size: 80px;">TRUMP</span> been up to today?</div>
+        </div>
+
+        <div id = "news" class = "center panel">
+            <div class = "article">
+                <h4>
+                <% if(title !== null){ %>
+                    <p><%= title %></p>
+                <% } %>
+                </h4>
+                <p> This is the content of the article! </p>
+            </div>
+            <div class = "article">
+                <h4>News Article Title 2</h4>
+                <p> This is the content of the article! </p>
+            </div>
+        </div>
+        
+        <div class = "center">Powered by NewsAPI.org</div>
+    </div>
+
+</body>
+</html>
