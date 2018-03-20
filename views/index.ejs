@@ -33,8 +33,17 @@
             
             <% for (i = 0; i < count; i++){ %>
                 <div class = "article">
-                    <h4><%= response.articles[i].title %></h4>
-                    <p><%= response.articles[i].description %></p>
+                    <div class = "row" style = "padding: 0px;">
+                        <div class = "col-md-4">
+                            <img class = "col-md-12 article-image" src= <%= response.articles[i].urlToImage %>>
+                        </div>
+                        <div class = "col-md-8">
+                            <h4><%= response.articles[i].title %></h4>
+                            <hr style = "margin: 10px 0px;">
+                            <p><%= response.articles[i].description %></p>
+                            <% console.log(response.articles[i]); %>
+                        </div>
+                    </div>
                 </div>
             <% } %>
 

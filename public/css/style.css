@@ -10,12 +10,12 @@ body {
 
 h4 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 23px;
     letter-spacing: 0.2px;
@@ -23,13 +23,25 @@ p {
 
 .article {
     width: 100%;
-    padding: 4% 10%;
+    padding: 0px;
+    /* padding: 4% 10%; */
     background-color: #E4FDE1;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #2B2D42;
     position: relative;
     margin: 30px auto;
+}
+
+.article-image{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 2px solid rgba(0,0,0,.2);
+    height: auto;
+    max-width: 100%;
+    padding: 0px;
+    padding-right: 2px;
+    position: relative;
 }
 
 .center {
@@ -42,7 +54,7 @@ p {
  }
 
 .panel{
-    padding: 1% 20%;
+    padding: 1% 10%;
     color: #E4FDE1;
     /* background-color: #2D0605; */
     background-color: #2978A0;
