@@ -26,18 +26,18 @@
         </div>
 
         <div id = "news" class = "center panel">
-            <div class = "article">
-                <h4>
-                <% if(title !== null){ %>
-                    <p><%= title %></p>
-                <% } %>
-                </h4>
-                <p> This is the content of the article! </p>
-            </div>
-            <div class = "article">
-                <h4>News Article Title 2</h4>
-                <p> This is the content of the article! </p>
-            </div>
+            <% let count = 5; %>
+            <% if (response.totalResults < count){ %>
+                <%= count = response.totalResults; %>
+            <% } %>
+            
+            <% for (i = 0; i < count; i++){ %>
+                <div class = "article">
+                    <h4><%= response.articles[i].title %></h4>
+                    <p><%= response.articles[i].description %></p>
+                </div>
+            <% } %>
+
         </div>
         
         <div class = "center">Powered by NewsAPI.org</div>

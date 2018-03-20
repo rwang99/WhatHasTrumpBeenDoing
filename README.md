@@ -10,3 +10,7 @@ Changelog:
 2/8/18: 
 - Created basic template/layout of content.
 - Added cards, opaque background image layer
+
+3/20/18: 
+- Added basic API support from NewsAPI
+- Started working on the requests and calls
