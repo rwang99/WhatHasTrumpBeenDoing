@@ -20,7 +20,12 @@ router.get('/', function (req, res) {
     sortBy: 'relevancy',
     page: 2
   }).then(response => {
-    console.log(response);
+    // console.log(response);
+    let filteredResponse = response.articles.filter(function(article) {
+      return article.title && article.description && article.urlToImage;
+    });
+    response.articles = filteredResponse;
+    response.totalResults = filteredResponse.length;
     res.render('index', {response: response});  // sends response to middleware
   });
 

@@ -29,7 +29,7 @@
         <div id = "news" class = "panel">
             <% let count = 20; %>
             <% if (response.totalResults < count){ %>
-                <%= count = response.totalResults; %>
+                <% count = response.totalResults; %>
             <% } %>
             
             <% for (i = 0; i < count; i++){ %>
