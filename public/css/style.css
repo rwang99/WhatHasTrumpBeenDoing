@@ -72,6 +72,10 @@ p {
     margin: 0px;
  }
 
+.footer{
+    color: rgb(148, 148, 148);
+}
+
 .panel{
     padding: 1% 10%;
     color: #E4FDE1;
