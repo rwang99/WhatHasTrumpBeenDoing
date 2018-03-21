@@ -6,6 +6,13 @@
     }
 }
 
+@media only screen and (max-width: 990px) {
+    .article-image {
+        border-bottom-left-radius: 0px !important;
+        border-top-right-radius: 5px !important;
+    }
+}
+
 a { color: inherit; } 
 
 a:hover {
@@ -64,10 +71,11 @@ p {
 .article-image{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
     height: auto;
     max-width: 100%;
     padding: 0px;
-    padding-right: 2px;
+    padding-right: 0px;
     position: relative;
 }
 
