@@ -22,28 +22,36 @@
 <body>
     <div class="container-fluid">
         <div id = "home" class = "center panel">
-            <div class = "title"><br><br>What has <span style="color: #FB3640; font-size: 80px;">TRUMP</span> been up to today?</div>
+            <div class = "title">What has <span style="color: #FB3640; font-size: 12vh;">TRUMP</span> been up to today?</div>
         </div>
 
-        <div id = "news" class = "center panel">
-            <% let count = 5; %>
+        <div id = "news" class = "panel">
+            <% let count = 20; %>
             <% if (response.totalResults < count){ %>
                 <%= count = response.totalResults; %>
             <% } %>
             
             <% for (i = 0; i < count; i++){ %>
                 <div class = "article">
-                    <div class = "row" style = "padding: 0px;">
-                        <div class = "col-md-4">
-                            <img class = "col-md-12 article-image" src= <%= response.articles[i].urlToImage %>>
+                    <a href= <%= response.articles[i].url %> target="_blank">
+                        <div class = "row" style = "padding: 0px;">
+                            <div class = "col-md-3">
+                                <img class = "col-md-12 article-image" src= <%= response.articles[i].urlToImage %>>
+                            </div>
+                            <div class = "col-md-9">
+                                <div class = "article-text">
+                                    <h4>
+                                        <span class = "bold">
+                                            <%= response.articles[i].source.name %>:
+                                        </span> 
+                                        <%= response.articles[i].title %></h4>
+                                    <hr style = "margin: 10px 0px;">
+                                    <p><%= response.articles[i].description %></p>
+                                    <% console.log(response.articles[i]); %>
+                                </div>  
+                            </div>
                         </div>
-                        <div class = "col-md-8">
-                            <h4><%= response.articles[i].title %></h4>
-                            <hr style = "margin: 10px 0px;">
-                            <p><%= response.articles[i].description %></p>
-                            <% console.log(response.articles[i]); %>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             <% } %>
 

@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
     language: 'en',
   }).then(response => {
     // console.log(response);
-    res.render('index', {response: response});
+    res.render('index', {response: response});  // sends response to middleware
   });
 
 });
@@ -25,16 +25,3 @@ router.get('/', function (req, res) {
 router.listen(3000, function () {
   console.log('Website listening on port 3000!');
 });
-
-// router.post('/', function(req, res){
-//   newsapi.v2.topHeadlines({
-//     sources: 'bbc-news, cnn, fox-news, nbc-news, the-hill, the-new-york-times, the-washington-post, usa-today',
-//     q: 'trump',
-//     language: 'en',
-//   }).then(response => {
-//     console.log(response);
-//     console.log(response.articles[0]);
-//     res.render('index', {title: response.articles[0].title})
-//   });
-
-// });
