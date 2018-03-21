@@ -11,12 +11,16 @@ const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI(process.env.API_KEY);
 
 router.get('/', function (req, res) {
-  newsapi.v2.topHeadlines({
+  newsapi.v2.everything({
     sources: 'bbc-news, cnn, fox-news, nbc-news, the-hill, the-new-york-times, the-washington-post, usa-today',
     q: 'trump',
     language: 'en',
+    from: '2018-03-20',
+    to: '2018-03-21',
+    sortBy: 'relevancy',
+    page: 2
   }).then(response => {
-    // console.log(response);
+    console.log(response);
     res.render('index', {response: response});  // sends response to middleware
   });
 
