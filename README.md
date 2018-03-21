@@ -12,5 +12,8 @@ Changelog:
 - Added cards, opaque background image layer
 
 3/20/18: 
-- Added API support from newsapi
+- Added API support from newsapi, loaded new articles into the webpage
 - Cleaned up formatting, added templating functionality to link the calls to the front-end
+
+3/21/18:
+- Clean up formatting, added a date/timestamp for each article

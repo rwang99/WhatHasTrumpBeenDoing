@@ -11,16 +11,19 @@ const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI(process.env.API_KEY);
 
 router.get('/', function (req, res) {
+  let today = new Date();
+  let yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1)
+  
   newsapi.v2.everything({
     sources: 'bbc-news, cnn, fox-news, nbc-news, the-hill, the-new-york-times, the-washington-post, usa-today',
     q: 'trump',
     language: 'en',
-    from: '2018-03-20',
-    to: '2018-03-21',
+    to: today.toISOString(),
+    from: yesterday.toISOString(),
     sortBy: 'relevancy',
-    page: 2
+    page: 1
   }).then(response => {
-    // console.log(response);
     let filteredResponse = response.articles.filter(function(article) {
       return article.title && article.description && article.urlToImage;
     });

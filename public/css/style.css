@@ -21,9 +21,24 @@ body {
     padding: 0;
 }
 
+hr {
+    border-color: #2978A0;
+    border-width: 2px;
+    margin: 4px 0px;
+}
 h4 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    line-height: 23px;
+}
+
+h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0px;
+    line-height: 0px;
 }
 
 p {
@@ -58,6 +73,7 @@ p {
 
 .article-text{
     padding: 10px;
+    /* padding-left: 0px; */
 }
 .bold {
     font-weight: bold;
@@ -74,6 +90,10 @@ p {
 
 .footer{
     color: rgb(148, 148, 148);
+}
+
+.light-text{
+    color: rgb(245, 245, 245);
 }
 
 .panel{

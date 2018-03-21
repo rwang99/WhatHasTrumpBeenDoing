@@ -27,10 +27,12 @@
         </div>
 
         <div id = "news" class = "panel">
-            <% let count = 20; %>
+            <% let count = 40; %>
             <% if (response.totalResults < count){ %>
                 <% count = response.totalResults; %>
             <% } %>
+
+            <p class = "light-text center">Total results: <%= response.totalResults %></p>
             
             <% for (i = 0; i < count; i++){ %>
                 <div class = "article">
@@ -42,10 +44,14 @@
                             <div class = "col-md-9">
                                 <div class = "article-text">
                                     <h4>
-                                        <span class = "bold">
-                                            <%= response.articles[i].source.name %>:
-                                        </span> 
-                                        <%= response.articles[i].title %></h4>
+                                        <%= response.articles[i].title %></h4><br>
+                                    <h5><span>
+                                        <%= response.articles[i].source.name %>
+                                    </span>
+
+                                    <% let date = new Date(response.articles[i].publishedAt); %>
+                                    <span style = "float: right;"><%= date.toLocaleDateString().substring(0) + ", " + date.toLocaleTimeString().substring(0, 5) %></span>
+                                    </h5> 
                                     <hr style = "margin: 10px 0px;">
                                     <p><%= response.articles[i].description %></p>
                                     <% console.log(response.articles[i]); %>
