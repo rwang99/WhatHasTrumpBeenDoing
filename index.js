@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express();
 const bodyParser = require('body-parser');
+router.set('port', (process.env.PORT || 3000));
 router.set('view engine', 'ejs');
 require('dotenv').load();
 
@@ -34,6 +35,6 @@ router.get('/', function (req, res) {
 
 });
 
-router.listen(3000, function () {
-  console.log('Website listening on port 3000!');
+router.listen(router.get('port'), function () {
+  console.log('Website listening on port ', app.get('port'));
 });
