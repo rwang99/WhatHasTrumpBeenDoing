@@ -8,11 +8,12 @@ Project Completed: N/A
 Every day when I turn on the news the first word I usually see is "TRUMP". I wondered since Trump is always in the news nowadays, if I can make a site that will aggregate the daily happenings of Trump into one place? While making this site, I can gain more experience using Javascript, Node.js, Express, HTML/CSS/Bootstrap, and learn another API!
 
 <h4>End goals for this project:</h4>
-- Aggregate news and information about trump
-- Filter out news articles and summarize recent news about Trump through a word cloud/something similar.
-- Include a customizable user interface for users to choose where to source the articles
-- Have a clean and responsive website
-- **LEARN**
+
+ * Aggregate news and information about trump
+ * Filter out news articles and summarize recent news about Trump through a word cloud/something similar.
+ * Include a customizable user interface for users to choose where to source the articles
+ * Have a clean and responsive website
+ * **LEARN**
 
 <h4>Super reach goals for this project:</h4>
 - Implement machine learning/some algorithm to decide whether Trump has done anything especially scandalous/controversial recently. Perhaps through a spike in news articles around a certain time or through word/sentiment analysis? 
@@ -41,7 +42,9 @@ Articles published with the last day are displayed from credible news outlets (c
 
 3/29/18:
  - Deployed site to heroku
- https://whathastrumpbeendoing.herokuapp.com/
+https://whathastrumpbeendoing.herokuapp.com/
+- Removed page buttons from production
+ 
 
 <br>
 <!-- <h4>Concluding Notes</h4>
