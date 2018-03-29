@@ -36,6 +36,9 @@ Articles published with the last day are displayed from credible news outlets (c
 - Clean up formatting, added a date/timestamp for each article
 - Articles pulled are now all from the past day at earliest
 
+3/29/18:
+ - Attempting to deploy to heroku
+ 
 <br>
 <h4>Concluding Notes</h4>
 I would like to thank stackoverflow for their constant support throughout this project. Also I would like to thank Donald Trump for making this possible, as without him appearing in the news this often, I would probably need to pivot ideas a bit. Enjoy :)

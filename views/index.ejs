@@ -32,6 +32,15 @@
                 <% count = response.totalResults; %>
             <% } %>
 
+            <form action = "/" method = "post">
+                <span style = "float: left;">
+                    <input type="button" id="prev" value="&#8249;" class = "btn btn-default">
+                </span>
+                <span style = "float: right;">
+                    <input type="button" id="next" value="&#8250;" class = "btn btn-default">
+                </span>
+            </form>
+
             <p class = "light-text center">Total results: <%= response.totalResults %></p>
             
             <% for (i = 0; i < count; i++){ %>
