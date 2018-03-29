@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express();
 const bodyParser = require('body-parser');
-router.set('port', (process.env.PORT || 3000));
+router.set('port', (process.env.PORT || 5000));
 router.set('view engine', 'ejs');
 require('dotenv').load();
 
@@ -36,5 +36,5 @@ router.get('/', function (req, res) {
 });
 
 router.listen(router.get('port'), function () {
-  console.log('Website listening on port ', app.get('port'));
+  console.log('Website listening on port', router.get('port'));
 });
