@@ -16,7 +16,7 @@ Every day when I turn on the news the first word I usually see is "TRUMP". I won
  * **LEARN**
 
 <h4>Super reach goals for this project:</h4>
-- Implement machine learning/some algorithm to decide whether Trump has done anything especially scandalous/controversial recently. Perhaps through a spike in news articles around a certain time or through word/sentiment analysis? 
+- Implement machine learning/some algorithm to decide whether Trump has done anything especially notable recently. Perhaps through a spike in news articles around a certain time or through word/sentiment analysis? 
 
 <h4>How this site works</h4>
 This site is driven on a Node.js server-side environment, uses Express as the framework, Bootstrap for CSS, and Javascript for most of the code. To retrieve news articles, I used the API Newsapi from newsapi.org.
